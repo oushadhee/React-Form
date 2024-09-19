@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './first.css'
 
 export default function FirstPage() {
   const [formData, setFormData] = useState({
@@ -36,7 +37,7 @@ export default function FirstPage() {
     e.preventDefault();
     
     // Here we check if the form is filled out correctly
-    if (formData.title && formData.description && formData.text) {
+    if (formData.title && formData.description && formData.text && formData.photo) {
       setSubmitMessage('Form submitted successfully!');
     } else {
       setSubmitMessage('Please fill in all fields.');
@@ -47,8 +48,8 @@ export default function FirstPage() {
 
   return (
     <div className="container">
-      <h1>Form In React</h1>
-      <form onSubmit={handleSubmit}>
+      <h1>Details</h1>
+      <form  className="container1" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="title">Title</label>
           <input
@@ -65,7 +66,7 @@ export default function FirstPage() {
   <textarea
     placeholder="Enter Description"
     cols="30"
-    rows="10"
+    rows="6"
     name="description"
     value={formData.description}
     onChange={handleChange}
@@ -78,7 +79,7 @@ export default function FirstPage() {
           <textarea
             placeholder="Enter Text"
             cols = "30"
-            rows="10"
+            rows="3"
             name="text"
             value={formData.text}
             onChange={handleChange}

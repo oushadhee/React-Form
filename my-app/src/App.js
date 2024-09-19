@@ -3,15 +3,19 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Welcome from './components/Welcome';
 import FirstPage from './components/FirstPage';
 import SecondPage from './components/SecondPage';  
+import Home from './components/Home';
 
 function App() {
   return (
     <Router>
     <div className="App">
-      <h1>Welcome to our form</h1>
+      
+    <Welcome/>
+   
 
       <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/welcome-page" element={<Welcome />} />
           <Route path="/first-page" element={<FirstPage />} />
           <Route path="/second-page" element={<SecondPage />} />
         </Routes>

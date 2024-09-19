@@ -1,0 +1,57 @@
+.header {
+    background-color: #cadabf;
+    padding: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+    
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0; /* Position at the very top */
+    width: 100%; /* Make sure it spans the full width of the page */
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+  
+  body {
+    margin: 0; /* Remove default margin */
+    padding-top: 80px; /* Add some space at the top so the content is not hidden under the fixed header */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  .header h3 {
+    margin-left: auto; /* Push "Contact Us" to the far right */
+    margin-right: 10px;
+    color: #333;
+}
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  .contact-us {
+    margin-left: 90px;
+  }
+  
+  .contact-us h3 {
+    margin-left: 900px;
+    font-size: 16px;
+    color: #333;
+  }

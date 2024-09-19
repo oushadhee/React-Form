@@ -37,7 +37,7 @@ export default function SecondPage() {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
-          <input
+          <textarea
             type="email"
             placeholder="Enter your email"
             name="email"
@@ -46,16 +46,15 @@ export default function SecondPage() {
           />
         </div>
 
-        <div>
-          <label htmlFor="description">Description</label>
-          <input
-            type="text"
-            placeholder="Enter a description"
-            name="description"
-            value={formData.description}
-            onChange={handleChange}
-          />
-        </div>
+        <label htmlFor="description">Description</label>
+  <textarea
+    placeholder="Enter Description"
+    cols="30"
+    rows="6"
+    name="description"
+    value={formData.description}
+    onChange={handleChange}
+  />
 
         <div>
           <button type="submit">Save</button>

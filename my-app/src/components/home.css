@@ -1,0 +1,24 @@
+.home-container {
+    background-color: rgb(127, 192, 135); /* Set the background color to red */
+    height: 100vh; /* Make the container full viewport height */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  h2 {
+    color: white; /* Optional: Adjust text color for better contrast */
+  }
+  
+  p {
+    color: white; /* Text color */
+    font-size: 1.2em; /* Increase font size for readability */
+    line-height: 1.6; /* Improve line spacing */
+    max-width: 800px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 20px; /* Padding inside the paragraph */
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+ 
