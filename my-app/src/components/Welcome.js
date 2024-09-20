@@ -20,7 +20,7 @@ export default function Welcome() {
   return (
     <div>
       <header className="header">
-        <h1><b> Join the team</b> </h1>
+        <h1><b> Join the Metana team</b> </h1>
         
         <div className="header-buttons">
        

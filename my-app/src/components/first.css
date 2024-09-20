@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   body {
-    background-color: rgb(214, 212, 212); /* Correct syntax for background-color */
+    background-color: rgb(127, 192, 135); /* Correct syntax for background-color */
     font-family: Arial, sans-serif;
    
     justify-content: center;
@@ -15,7 +16,7 @@
   }
   
   .container {
-    background-color: #fff;
+    background-color: #e8dcdc;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Corrected syntax for box-shadow */
     padding: 20px;
